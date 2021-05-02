@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MoviesContainer from "./components/MoviesApp/MoviesContainer";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <em>
+        <h2 style={{ margin: "10px 10px 10px 10px" }}>My Big Movie List</h2>
+      </em>
+      <MoviesContainer />
     </div>
   );
 }
